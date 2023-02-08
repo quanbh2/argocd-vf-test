@@ -5,6 +5,8 @@ metadata:
   namespace: default
   labels:
     app: vfip-nginx-test
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   replicas: 1
   selector:
